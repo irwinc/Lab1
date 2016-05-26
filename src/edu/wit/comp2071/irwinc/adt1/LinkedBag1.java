@@ -189,87 +189,87 @@ public final class LinkedBag1<T> implements BagInterface<T>
 
     /** Method for testing.
      * */
-    public static void main(String[] args)
-    {
-        //LinkedBag1 bag = new LinkedBag1();
-        LinkedBag1 <String> bag = new LinkedBag1<>();
-        bag.add("banana");
-        bag.add("potato");
-        bag.add("orange");
-        bag.add("carrot");
-        bag.add("banana");
-        bag.add("pineapple");
-        bag.add("banana");
-
-        if (bag.isEmpty()) {
-            System.out.println("The bag is empty.");
-        }
-        else {
-            System.out.println("The bag contains items.");
-        }
-
-        System.out.println("There are " + bag.getCurrentSize() + " item(s) in the bag.");
-        Object[] bagArray = bag.toArray();
-        System.out.print("This bag contain the following items; ");
-
-        for (int i = 0; i < bag.getCurrentSize(); i++)
-        {
-           System.out.print(bagArray[i] + ", ");
-        }
-        System.out.println("\n");
-        System.out.println("Counting bananas.");
-        System.out.println("This bag contains " + bag.getFrequencyOf("banana") + " banana(s).");
-
-        System.out.println("Checking to see if bag contains watermelon.");
-        if (bag.contains("watermelon"))
-        {
-            System.out.println("Bag contains watermelon.");
-        }
-        else
-        {
-            System.out.println("Bag does not contain watermelon. \n");
-        }
-
-        System.out.println("Removing an item from the bag.");
-        System.out.println(bag.remove() + " was removed from the bag.");
-        System.out.print("This bag now contains the following items: ");
-        bagArray = bag.toArray();
-        for (int i = 0; i < bag.getCurrentSize(); i++)
-        {
-            System.out.print(bagArray[i] + ", ");
-        }
-        System.out.println("\n");
-
-        System.out.println("Removing a banana from the bag.");
-        bag.remove("banana");
-        bagArray = bag.toArray();
-        System.out.print("This bag now contains the following items: ");
-        for (int i = 0; i < bag.getCurrentSize(); i++)
-        {
-            System.out.print(bagArray[i] + ", ");
-        }
-        System.out.println("\n");
-
-        System.out.println("Emptying bag.");
-        bag.clear();
-        bagArray = bag.toArray();
-        if (!bag.isEmpty())
-        {
-            System.out.println("ERROR: Bag failed to empty.");
-            System.out.print("ERROR: This bag still contains the following items; ");
-
-            for (int i = 0; i < bag.getCurrentSize(); i++)
-            {
-                System.out.print(bagArray[i] + ", ");
-            }
-            System.out.println();
-            System.exit(-1);
-        }
-        else
-        {
-            System.out.println("Bag is now empty.");
-        }
-
-    } // end main
+//    public static void main(String[] args)
+//    {
+//        //LinkedBag1 bag = new LinkedBag1();
+//        LinkedBag1 <String> bag = new LinkedBag1<>();
+//        bag.add("banana");
+//        bag.add("potato");
+//        bag.add("orange");
+//        bag.add("carrot");
+//        bag.add("banana");
+//        bag.add("pineapple");
+//        bag.add("banana");
+//
+//        if (bag.isEmpty()) {
+//            System.out.println("The bag is empty.");
+//        }
+//        else {
+//            System.out.println("The bag contains items.");
+//        }
+//
+//        System.out.println("There are " + bag.getCurrentSize() + " item(s) in the bag.");
+//        Object[] bagArray = bag.toArray();
+//        System.out.print("This bag contain the following items; ");
+//
+//        for (int i = 0; i < bag.getCurrentSize(); i++)
+//        {
+//           System.out.print(bagArray[i] + ", ");
+//        }
+//        System.out.println("\n");
+//        System.out.println("Counting bananas.");
+//        System.out.println("This bag contains " + bag.getFrequencyOf("banana") + " banana(s).");
+//
+//        System.out.println("Checking to see if bag contains watermelon.");
+//        if (bag.contains("watermelon"))
+//        {
+//            System.out.println("Bag contains watermelon.");
+//        }
+//        else
+//        {
+//            System.out.println("Bag does not contain watermelon. \n");
+//        }
+//
+//        System.out.println("Removing an item from the bag.");
+//        System.out.println(bag.remove() + " was removed from the bag.");
+//        System.out.print("This bag now contains the following items: ");
+//        bagArray = bag.toArray();
+//        for (int i = 0; i < bag.getCurrentSize(); i++)
+//        {
+//            System.out.print(bagArray[i] + ", ");
+//        }
+//        System.out.println("\n");
+//
+//        System.out.println("Removing a banana from the bag.");
+//        bag.remove("banana");
+//        bagArray = bag.toArray();
+//        System.out.print("This bag now contains the following items: ");
+//        for (int i = 0; i < bag.getCurrentSize(); i++)
+//        {
+//            System.out.print(bagArray[i] + ", ");
+//        }
+//        System.out.println("\n");
+//
+//        System.out.println("Emptying bag.");
+//        bag.clear();
+//        bagArray = bag.toArray();
+//        if (!bag.isEmpty())
+//        {
+//            System.out.println("ERROR: Bag failed to empty.");
+//            System.out.print("ERROR: This bag still contains the following items; ");
+//
+//            for (int i = 0; i < bag.getCurrentSize(); i++)
+//            {
+//                System.out.print(bagArray[i] + ", ");
+//            }
+//            System.out.println();
+//            System.exit(-1);
+//        }
+//        else
+//        {
+//            System.out.println("Bag is now empty.");
+//        }
+//
+//    } // end main
 
 } // end LinkedBag1
