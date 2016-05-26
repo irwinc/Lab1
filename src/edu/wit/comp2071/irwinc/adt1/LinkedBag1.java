@@ -13,7 +13,7 @@ package edu.wit.comp2071.irwinc.adt1;
  @author Frank M. Carrano
  @version 4.0
  */
-public final class LinkedBag1<T> implements BagInterface<T>
+public class LinkedBag1<T> implements BagInterface<T>
 {
     private Node firstNode;       // Reference to first node
     private int numberOfEntries;
